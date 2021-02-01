@@ -5,6 +5,7 @@
 css样式在"/src/components"文件夹下
 
 ### 看效果
+最佳效果请使用最新chrome浏览器😆。  
 直接打开文件夹"/dist"下的，`index.html`文件
 
 ### 安装
