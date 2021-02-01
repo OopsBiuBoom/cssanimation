@@ -9,8 +9,6 @@
 
     div {
         position: relative;
-        top: 100px;
-        left: 100px;
         width: 180px;
         height: 100px;
         border: 1px solid $boardColor;
