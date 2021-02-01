@@ -35,14 +35,24 @@
             top: -50%;
             height: 200%;
             width: 200%;
-            // 不重复使用图片来填充
-            background-repeat: no-repeat;
-            // 设置每个区域的所占的大小
-            background-size: 50% 50%, 50% 50%;
-            // 设置图片摆放的位置
-            background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-            // 使用图片。linear-gradient()方法会生成一个渐变的图片
+            
+            // 使用图片。linear-gradient()方法会生成四个渐变的图片
             background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+            /* 
+                设置图片摆放起始的位置。可以设置多个起始位置，与background-image设置的图片顺序相对应。
+                0 0代表左上角，100% 100%代表右上角
+                下面代码相当于background-position: x轴最左边 y轴最上边, x轴最右边 y轴最上边, x轴最右边 y轴最下边, x轴最左边 y轴最下边;
+                也等于background-position: 左上角, 右上角, 右下角, 左下角;
+            */
+            background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            /* 
+                根据background-image设置的图片，设置他们的大小。也可以每个图片进行设置。
+                background-size: 宽 高;
+            */
+            background-size: 50% 50%, 50% 50%;
+            // 不重复使用图片来填充。也可以对每个图片进行设置。
+            background-repeat: no-repeat;
+
             // 使用动画
             animation: rotate 4s linear infinite;
         }
