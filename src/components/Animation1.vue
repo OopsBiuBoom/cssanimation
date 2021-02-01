@@ -6,7 +6,7 @@
 
     // 定义边框颜色
     $boardColor: red;
-    
+
     div {
         position: relative;
         top: 100px;
@@ -25,6 +25,7 @@
             transition: .3s ease-in-out;
         }
 
+        // 设置伪元素的位置和边框
         &::before {
             top: -5px;
             left: -5px;
@@ -32,6 +33,7 @@
             border-top: 1px solid $boardColor;
         }
 
+        // 设置伪元素的位置和边框
         &::after {
             bottom: -5px;
             right: -5px;
@@ -39,7 +41,7 @@
             border-bottom: 1px solid $boardColor;
         }
 
-        // hover时的处理
+        // hover时调整大小
         &:hover::after {
             width: calc(100% + 9px);
             height: calc(100% + 9px);
