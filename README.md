@@ -1,19 +1,4 @@
-# cssanimation
+### CSS动画学习
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 参考
+- [CSS 奇思妙想边框动画](https://www.cnblogs.com/coco1s/p/14291567.html)
